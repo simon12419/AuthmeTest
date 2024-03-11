@@ -8,13 +8,11 @@ import com.android.volley.VolleyError
 import com.example.github_user_sdk.network.json.User
 import com.example.github_user_sdk.network.json.UserDetail
 import com.example.github_user_sdk.repository.UserInfoRepository
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.launch
 
 class MainViewModel(private val userInfoRepository: UserInfoRepository) : ViewModel() {
     companion object {
-        private const val PAGE_SIZE = 20
+        private const val PAGE_SIZE = 30
     }
 
     private var mLastUserId: Int = 0
